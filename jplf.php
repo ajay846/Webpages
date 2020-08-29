@@ -53,43 +53,46 @@ if(isset($_POST['btn'])){
 
 <body>
 	<center>
-		<h1>Your Society Name</h1>
-		<h4>Maintainance Committee</h4>
+		<div class="container">
+			<h1>Janapriya Lakefront C-Block</h1>
+			<h4>Maintainance Committee</h4>
 
-		<form method="POST" action="#" class="form">
-			<label for="firstname">First Name</label>
-			<div class="form-group">
-				<input type="text" name="fn" class="form-control" placeholder="First Name*" required>
-			</div>
+			<form method="POST" action="#" class="form">
+				<label for="firstname">First Name</label>
+				<div class="form-group">
+					<input type="text" name="fn" class="form-control" placeholder="First Name*" required>
+				</div>
 
-			<label for="lastname">Last Name</label>
-			<div class="form-group">
-				<input type="text" name="ln" class="form-control" placeholder="Last Name">
-			</div>
+				<label for="lastname">Last Name</label>
+				<div class="form-group">
+					<input type="text" name="ln" class="form-control" placeholder="Last Name">
+				</div>
 
-			<div class="form-group">
-				<label for="recNum">Reciept Number</label>
-				<input type="number" name="rn" placeholder="Reciept Number*" class="form-control" required>
-			</div>
+				<div class="form-group">
+					<label for="recNum">Reciept Number</label>
+					<input type="number" name="rn" placeholder="Reciept Number*" class="form-control" required>
+				</div>
 
-			<div class="form-group">
-				<label for="recNum">Month Of Payment</label>
-				<input type="number" name="monthNum" min="1" max="12" class="form-control" placeholder="Month Of Payment*" required>
-			</div>
+				<div class="form-group">
+					<label for="recNum">Month Of Payment</label>
+					<input type="number" name="monthNum" min="1" max="12" class="form-control" placeholder="Month Of Payment*" required>
+				</div>
 
-			<div class="form-group">
-				<label for="flatnum">Flat number (DO NOT INCLUDE 'C2-')</label>
-				<input type="number" name="flat" placeholder="Falt Number*" class="form-control" maxlength="3" required>
-			</div>
+				<div class="form-group">
+					<label for="flatnum">Flat number (DO NOT INCLUDE 'C2-')</label>
+					<input type="number" name="flat" placeholder="Falt Number*" class="form-control" maxlength="3" required>
+				</div>
 
-			<div class="form-group">
-				<button class="btn btn-primary btn-md" name="btn">Submit</button>
-			</div>
-		</form>
-				
-		<div style="background: #c0fad3;">
-			<label for="madeBy">Designed By: Sai Nath. U</label>
+				<div class="form-group">
+					<button class="btn btn-primary btn-md" name="btn">Submit</button>
+				</div>
+			</form>
 		</div>
+
+		<div style="background: #c0fad3;">
+				<label for="madeBy">Designed By: Sai Nath. U</label>
+		</div>
+
 	</center>
 
 </body>
