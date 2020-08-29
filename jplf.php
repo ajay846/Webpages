@@ -91,10 +91,11 @@ if(isset($_POST['btn'])){
 		</div>
 
 		<div style="background: #c0fad3;">
-				<label for="madeBy">Designed By: Sai Nath. U</label>
+				<label for="madeBy">Designed By: <button class="btn btn-link"><a href="https://www.instagram.com/iamsainath.u/">Sai Nath. U</a></button></label>
 		</div>
 
 	</center>
 
 </body>
 </html>
+
