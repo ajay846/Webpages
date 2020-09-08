@@ -45,7 +45,7 @@ if(isset($_POST['btn'])){
 		    echo "<div class=container><div class=alert alert-success><strong>Success!</strong> Records added successfully</div></div>";
 		}
 		else{
-			echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+			echo "<div class=container><div class=alert alert-warning><strong>Error!</strong> An unfortunate error occured please try again later</div></div>";
 		}
 	} 
 }
