@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SignUp To ***</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<style type="text/css">
+	body, html{				/*Setting to a 0 margin position so that no space is left*/
+		margin: 0 auto;
+		padding: 0;
+		padding-top: 10px;
+	}
+
+	.container{
+		background: #e65e5e;
+		height: 399px;
+		width: 300px;
+	}
+
+	h1[id=h1_1]{
+		padding-top: 0px;
+		font-weight: bolder;
+		color: #e65e5e;
+	}
+
+	div[id=div_123]{
+		padding-top: 120px;
+	}
+
+	input{
+		background-color: rgba(255, 255, 255, 0.5);
+	}
+
+	input::-webkit-outer-spin-button,        /* Chrome, Safari, Edge, Opera */
+	input::-webkit-inner-spin-button {
+	  -webkit-appearance: none;
+	  margin: 0;
+	}
+
+	input[type=number] {                     /* Firefox */
+	  -moz-appearance: textfield;
+	}
+
+</style>
+
+<body background="signup_login.jfif">
+
+	<div id="div_123">
+		<form action="/login" method="post">
+			<div class="container" id="div_1">
+				<h1 id="h1_1" style="color: #f59898;">SignUp</h1>
+				<input type="text" name="email" placeholder="E-Mail*" class="input form-control" accept="email" required>
+				<br>
+				<input type="password" name="pw_create" class="input form-control" placeholder="Password*" id="pw_1" required>
+				<br>
+				<input type="password" name="pw_confirm" class="input form-control" placeholder="Confirm Password*" required>
+				<br>
+				<input type="number" name="phNo" class="input form-control" placeholder="Phone Number">
+				<br>
+				<button class="btn btn-primary" name="proceed">SignUp</button>
+				<br>
+				<br>
+				<br>
+				<center>
+					Already Have An Account? <a href="cssLogInForm.html" style="color: white; text-decoration: underline;">LogIn</a>
+				</center>
+
+			</div>
+
+		</form>
+
+		<center>
+			<p style="color: white;">Any Queries DM Me On <a href="https://www.instagram.com/iamchintu.u" target="https://www.instagram.com/iamchintu.u">Instagram</a></p>
+		</center>
+		
+	</div>
+
+</body>
+</html>
