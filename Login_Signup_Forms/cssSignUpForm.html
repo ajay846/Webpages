@@ -20,6 +20,8 @@
 		background: #e65e5e;
 		height: 399px;
 		width: 300px;
+		box-shadow: 4px 4px 4px 3px #f5c6c6;
+		border-radius: 10px;
 	}
 
 	h1[id=h1_1]{
@@ -42,16 +44,16 @@
 	  margin: 0;
 	}
 
-	input[type=number] {                     /* Firefox */
+	input[type=number] {   /* Firefox */
 	  -moz-appearance: textfield;
 	}
 
 </style>
 
-<body background="signup_login.jfif">
+<body background="">
 
 	<div id="div_123">
-		<form action="/login" method="post">
+		<form action="/signup/" method="post"> <!--{% csrf_token %}-->
 			<div class="container" id="div_1">
 				<h1 id="h1_1" style="color: #f59898;">SignUp</h1>
 				<input type="text" name="email" placeholder="E-Mail*" class="input form-control" accept="email" required>
@@ -67,15 +69,18 @@
 				<br>
 				<br>
 				<center>
-					Already Have An Account? <a href="cssLogInForm.html" style="color: white; text-decoration: underline;">LogIn</a>
+					Already Have An Account? <a href="/login/" style="color: white; text-decoration: underline;">LogIn</a>
 				</center>
 
 			</div>
 
 		</form>
 
+		<br>
+		<br>
+		
 		<center>
-			<p style="color: white;">Any Queries DM Me On <a href="https://www.instagram.com/iamchintu.u" target="https://www.instagram.com/iamchintu.u">Instagram</a></p>
+			<p style="color: gray;">Any Queries DM Me On <a href="https://www.instagram.com/iamchintu.u" target="https://www.instagram.com/iamchintu.u">Instagram</a></p>
 		</center>
 		
 	</div>
