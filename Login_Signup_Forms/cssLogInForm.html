@@ -20,6 +20,8 @@
 		background: #e65e5e;
 		height: 395px;
 		width: 300px;
+		box-shadow: 4px 4px 4px 3px #f5c6c6;
+		border-radius: 10px;
 	}
 
 	h1[id=h1_1]{
@@ -38,13 +40,13 @@
 
 </style>
 
-<body background="signup_login.jfif">
+<body background="">
 
 	<div id="div_123">
-		<form action="/login" method="post">
+		<form action="/loginRequest/" method="post"> <!--{% csrf_token %}-->
 			<div class="container" id="div_1">
 				<h1 id="h1_1" style="color: #f59898;">LogIn</h1>
-				<input type="text" name="email" placeholder="E-Mail" class="input form-control" accept="email">
+				<input type="text" name="email" placeholder="E-Mail" class="input form-control" accept="email" name="mail">
 				<br>
 				<input type="password" name="pw" class="input form-control" placeholder="Password" id="pw_1">
 				<br>
@@ -54,7 +56,7 @@
 				<br>
 				<br>
 				<center>
-					Don't Have An Account? <a href="/SignUp" style="color: white; text-decoration: underline;">SignUp</a>
+					Don't Have An Account? <a href="/signup/" style="color: white; text-decoration: underline;">SignUp</a>
 
 				</center>
 
@@ -62,8 +64,11 @@
 
 		</form>
 
+		<br>
+		<br>
+
 		<center>
-			<p style="color: white;">Any Queries DM Me On <a href="https://www.instagram.com/iamchintu.u" target="https://www.instagram.com/iamchintu.u">Instagram</a></p>
+			<p style="color: gray;">Any Queries DM Me On <a href="https://www.instagram.com/iamchintu.u" target="https://www.instagram.com/iamchintu.u">Instagram</a></p>
 		</center>
 		
 	</div>
