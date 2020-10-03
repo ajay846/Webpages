@@ -78,13 +78,12 @@
     <div class="" style="padding-top: 10px; padding-left: 10px;">
       {% load static %}
       <div class="d-flex jc-center">
-      {% for data in results %}
-      <!--{% for i in '-0123456789'|make_list %}-->
+      {% for i in '-0123456789'|make_list %}
         <div class="card" style="width: 18rem;" style="padding-top: 5px;">
-          <img src="{ data[1] }" class="card-img-top" alt="..." >
+          <img src="{% static 'images/1.jpg' %}" class="card-img-top" alt="..." >
           <span id="line"></span>
           <div class="card-body">
-            <p class="card-text">{ data[2] }This Is A Lion <br> #lions #lions #photography</p>
+            <p class="card-text"><pre>This Is A Lion <br> #lions #lions #photography</pre></p>
           </div>
           <div>
             <div class="card-button" style="display: inline-block;">
@@ -96,7 +95,6 @@
           </div>
         </div>
       </div>
-      <!--{% endfor %}-->
       {% endfor %}
     </div>
 
